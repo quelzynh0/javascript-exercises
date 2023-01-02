@@ -1,11 +1,20 @@
 const sumAll = function (a, b) {
-    total = 0;
+    let sum = 0
     if (a < b) {
-        a++;
-        b--;
+        for (a = a; a <= b; a++) {
+            sum = a + sum
+        }
     }
-    return total
-};
+    else {
+        for (b = b; b <= a; b++) {
+            sum = b + sum
+        }
+
+    }
+    return sum
+}
 
 // Do not edit below this line
 module.exports = sumAll;
+
+
